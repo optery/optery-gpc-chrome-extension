@@ -12,7 +12,7 @@ To install and run Optery Global Privacy Control (GPC) Extension locally, follow
 2. Navigate to project directory:
 
    ```
-   cd optery-chrome-extension
+   cd optery-gpc-chrome-extension
    ```
 4. Install the dependencies using npm:
    ```
