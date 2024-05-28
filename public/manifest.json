@@ -1,25 +1,29 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "manifest_version": 3,
+  "name": "Optery Global Privacy Control (GPC) Extension",
+  "short_name": "Optery Extension",
+  "version": "0.0.1",
+  "description": "The Optery Global Privacy Control (GPC) Extension sends a GlobalPrivacyControl signal to prevent websites from tracking users.",
+  "icons": {
+    "16": "/icons/optery-icon-16.png",
+    "32": "/icons/optery-icon-32.png",
+    "48": "/icons/optery-icon-48.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "declarativeNetRequest",
+    "scripting"
+  ],
+  "web_accessible_resources": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "resources": ["content.js", "injectScript.js"],
+      "matches": ["<all_urls>"]
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html"
+  }
 }
