@@ -66,6 +66,7 @@ const App = () => {
         show={showModal}
         handleClose={() => setShowModal(false)}
         handleSelect={handleModalSelect}
+        gpcEnabled={gpcEnabled}
       />
     </>
   );
