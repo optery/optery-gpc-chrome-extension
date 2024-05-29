@@ -6,6 +6,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         chrome.storage.sync.set({ gpcValue: message.value });
       }
     });
+    return true;
   } else if (message.action === "updateRulesetState") {
     const { enable } = message;
     chrome.declarativeNetRequest.updateEnabledRulesets(
@@ -29,6 +30,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       const gpcValue = result.gpcValue;
       sendResponse({ gpcValue });
     });
+    return true;
   }
-  return true;
 });

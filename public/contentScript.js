@@ -38,8 +38,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     updateRulesetState(gpcValue);
     // Inject the injectScript.js script into the webpage with the gpcValue
     injectScriptWithGPCValue(gpcValue);
+    sendResponse({ success: true });
+    return true;
   }
-  return true;
 });
 
 checkInitialGPC();

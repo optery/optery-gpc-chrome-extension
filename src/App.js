@@ -1,10 +1,10 @@
 /* global chrome */
 import { useEffect, useState } from "react";
 import Popup from "./components/Popup";
-
+import Modal from "./components/Modal";
 const App = () => {
   const [gpcEnabled, setGpcEnabled] = useState(false);
-
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     const updateGpcStatus = () => {
       chrome.storage.sync.get("gpcValue", (result) => {
@@ -38,12 +38,35 @@ const App = () => {
         }
         chrome.tabs.sendMessage(tab.id, { gpcValue: isChecked });
       });
+      setShowModal(true);
     });
+  };
+
+  const handleModalSelect = (option) => {
+    setShowModal(false);
+    if (option === "current") {
+      chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        if (tabs.length > 0) {
+          chrome.tabs.reload(tabs[0].id);
+        }
+      });
+    } else if (option === "all") {
+      chrome.tabs.query({}, function (tabs) {
+        tabs.forEach(function (tab) {
+          chrome.tabs.reload(tab.id);
+        });
+      });
+    }
   };
 
   return (
     <>
       <Popup handleGpcChange={handleGpcChange} gpcEnabled={gpcEnabled} />
+      <Modal
+        show={showModal}
+        handleClose={() => setShowModal(false)}
+        handleSelect={handleModalSelect}
+      />
     </>
   );
 };
