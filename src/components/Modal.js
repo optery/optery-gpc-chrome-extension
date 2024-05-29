@@ -39,7 +39,7 @@ const Modal = ({ show, handleClose, handleSelect, gpcEnabled }) => {
           <p className="text-base font-semibold text-black mb-4">
             {gpcEnabled
               ? "Do you want to enforce protection now?"
-              : "Do you want to enforce protection removal?"}
+              : "Do you want to enforce protection removal now?"}
           </p>
           <div className="flex items-start gap-2 bg-[#FEF4DC] rounded text-[#CC7A00] p-4 mb-4">
             <svg
