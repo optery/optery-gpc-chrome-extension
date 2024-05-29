@@ -2,7 +2,7 @@ function Popup({ handleGpcChange, gpcEnabled }) {
   return (
     <>
       <div className={"flex justify-center items-center bg-[#FFFFFF] h-full"}>
-        <div className={`p-5 bg-[#011E3B] w-[457px] h-[657px] flex flex-col`}>
+        <div className={`p-5 bg-[#011E3B] w-[457px] h-[600px] flex flex-col`}>
           <div className={"flex flex-col gap-8"}>
             <div className={"flex gap-2 justify-center items-center"}>
               <img src={"/icons/optery.svg"} alt="Optery" />
@@ -53,13 +53,13 @@ function Popup({ handleGpcChange, gpcEnabled }) {
                 <img
                   src={"/icons/shieldon.svg"}
                   alt="Shield On"
-                  className={"h-[333px] w-[278px]"}
+                  className={"h-[292px] w-[250px]"}
                 />
               ) : (
                 <img
                   src={"/icons/shieldoff.svg"}
                   alt="Shield Off"
-                  className={"h-[333px] w-[194px]"}
+                  className={"h-[292px] w-[180px]"}
                 />
               )}
             </button>
