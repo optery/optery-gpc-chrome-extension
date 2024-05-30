@@ -11,7 +11,7 @@ function Popup({ handleGpcChange, gpcEnabled }) {
                   "bg-[#B5F8F1] text-[#011E3B] text-center text-xs not-italic font-semibold uppercase rounded-[19.567px] py-2.5 px-3.5"
                 }
               >
-                GPC extension
+                Extension
               </div>
             </div>
             <div>
@@ -41,7 +41,7 @@ function Popup({ handleGpcChange, gpcEnabled }) {
                       window.open("https://globalprivacycontrol.org/", "_blank")
                     }
                   >
-                    Learn more about GPC
+                    Learn more about GPC Extension
                   </button>
                 </div>
               </div>
@@ -65,18 +65,25 @@ function Popup({ handleGpcChange, gpcEnabled }) {
             </button>
           </div>
           <div className={"flex justify-center items-center flex-col gap-4"}>
+            <div className={"text-sm text-[#F8FAFB]"}>
+              New to Optery?
+              <button
+                className={
+                  "font-semibold not-italic text-[#B5F8F1] hover:underline"
+                }
+                style={{ marginLeft: "4px" }}
+                onClick={() => window.open("https://www.optery.com/", "_blank")}
+              >
+                Learn More
+              </button>
+            </div>
             <button
               className={
                 "text-xs font-semibold not-italic bg-[#4D81F1] text-[#FFFFFF] rounded py-2.5 px-9"
               }
-              onClick={() => window.open("https://www.optery.com/", "_blank")}
+              onClick={() => window.open("https://app.optery.com/", "_blank")}
             >
-              Optery Dashboard
-            </button>
-            <button
-              className={"text-xs font-semibold not-italic text-[#FFFFFF]"}
-            >
-              Learn more about Optery
+              Existing Account Login
             </button>
           </div>
         </div>

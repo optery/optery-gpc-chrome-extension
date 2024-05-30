@@ -36,7 +36,7 @@ const Modal = ({ show, handleClose, handleSelect, gpcEnabled }) => {
           </button>
         </div>
         <div className="px-6 pb-2.5">
-          <p className="text-base font-semibold text-black mb-4">
+          <p className="text-base font-semibold text-[#1B1D1E] mb-4">
             {gpcEnabled
               ? "Do you want to enforce protection now?"
               : "Do you want to disable protection now?"}
