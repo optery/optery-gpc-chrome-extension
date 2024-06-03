@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Optery Global Privacy Control (GPC) Extension",
-  "short_name": "Optery GPC Extension",
+  "name": "Optery Global Privacy Control (GPC) Extension - Deliver Opt-Out Requests",
+  "short_name": "Optery Global Privacy Control",
   "version": "0.0.1",
-  "description": "Optery's open-source Global Privacy Control (GPC) Extension empowers you to automatically communicate your privacy preferences to websites using the powerful GPC signal. Designed for simplicity, our extension allows even those without technical expertise to easily navigate and utilize the extension.",
+  "description": "Optery's Global Privacy Control Extension empowers you to communicate your privacy preferences to websites using the GPC signal.",
   "icons": {
     "16": "/icons/optery-icon-16.png",
     "32": "/icons/optery-icon-32.png",
