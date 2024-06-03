@@ -9,7 +9,7 @@ const Modal = ({ show, handleClose, handleSelect, gpcEnabled }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg w-96 relative">
         <div className="flex bg-[#F8FAFB] rounded-t-lg px-5 py-6 justify-between items-center mb-4">
-          <h2 className="text-xl font-semibold">Refresh Required</h2>
+          <h2 className="text-xl font-semibold">Browser Refresh Required</h2>
           <button onClick={handleClose} className="text-gray-400 text-2xl">
             <svg
               width="24"
@@ -37,9 +37,7 @@ const Modal = ({ show, handleClose, handleSelect, gpcEnabled }) => {
         </div>
         <div className="px-6 pb-2.5">
           <p className="text-base font-semibold text-[#1B1D1E] mb-4">
-            {gpcEnabled
-              ? "Do you want to enforce protection now?"
-              : "Do you want to disable protection now?"}
+            To update your protection status, your browser must be refreshed
           </p>
           <div className="flex items-start gap-2 bg-[#FEF4DC] rounded text-[#CC7A00] p-4 mb-4">
             <svg
@@ -69,7 +67,7 @@ const Modal = ({ show, handleClose, handleSelect, gpcEnabled }) => {
             </svg>
 
             <p className="text-sm font-semibold">
-              Refreshing might cause some websites to remove active sessions.
+              Make sure to save your changes in any open tabs before refreshing.
             </p>
           </div>
           <div className="bg-[#F8FAFB] shadow-[0_0px_-4px_4px_rgba(0,0,0,0.7)] px-4 py-5 flex flex-col items-center space-y-4">
@@ -77,7 +75,7 @@ const Modal = ({ show, handleClose, handleSelect, gpcEnabled }) => {
               onClick={() => handleSelect("current")}
               className="bg-blue-500 text-white text-[13px] font-semibold py-2 px-4 rounded hover:bg-blue-600 w-full"
             >
-              Refresh Active Tab
+              Refresh Active Tab Only
             </button>
             <div class="inline-flex items-center justify-center w-full">
               <hr class="w-64 h-px bg-gray-200 border-0" />

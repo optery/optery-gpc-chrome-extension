@@ -29,9 +29,9 @@ function Popup({ handleGpcChange, gpcEnabled }) {
                       "not-italic font-normal text-sm text-[#F8FAFB] text-center"
                     }
                   >
-                    Optery Global Privacy Control (GPC) Extension emits Global
-                    Privacy Control signals to websites restricting the storage
-                    of your personal information.
+                    Optery's open-source Global Privacy Control (GPC) Extension
+                    sends opt-out preference signals to websites, preventing
+                    your personal information from being sold and shared.
                   </p>
                   <button
                     className={
