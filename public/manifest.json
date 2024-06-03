@@ -3,7 +3,7 @@
   "name": "Optery Global Privacy Control (GPC) Extension",
   "short_name": "Optery GPC Extension",
   "version": "0.0.1",
-  "description": "The Optery Global Privacy Control (GPC) Extension sends a GlobalPrivacyControl signal to prevent websites from tracking users.",
+  "description": "Optery's open-source Global Privacy Control (GPC) Extension empowers you to automatically communicate your privacy preferences to websites using the powerful GPC signal. Designed for simplicity, our extension allows even those without technical expertise to easily navigate and utilize the extension.",
   "icons": {
     "16": "/icons/optery-icon-16.png",
     "32": "/icons/optery-icon-32.png",
