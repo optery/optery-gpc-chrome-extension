@@ -38,7 +38,10 @@ function Popup({ handleGpcChange, gpcEnabled }) {
                       "flex items-center text-sm not-italic font-semibold underline decoration-1 text-[#F8FAFB]"
                     }
                     onClick={() =>
-                      window.open("https://globalprivacycontrol.org/", "_blank")
+                      window.open(
+                        "https://help.optery.com/en/article/about-the-optery-global-privacy-control-gpc-extension-t8858r",
+                        "_blank"
+                      )
                     }
                   >
                     Learn more about GPC Extension
@@ -72,7 +75,12 @@ function Popup({ handleGpcChange, gpcEnabled }) {
                   "font-semibold not-italic text-[#B5F8F1] hover:underline"
                 }
                 style={{ marginLeft: "4px" }}
-                onClick={() => window.open("https://www.optery.com/", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://www.optery.com/?utm_source=gpc_extension&utm_medium=chrome_webstore&utm_campaign=gpc_extension_launch",
+                    "_blank"
+                  )
+                }
               >
                 Learn More
               </button>
@@ -81,7 +89,12 @@ function Popup({ handleGpcChange, gpcEnabled }) {
               className={
                 "text-xs font-semibold not-italic bg-[#4D81F1] text-[#FFFFFF] rounded py-2.5 px-9"
               }
-              onClick={() => window.open("https://app.optery.com/", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://app.optery.com/?utm_source=gpc_extension&utm_medium=chrome_webstore&utm_campaign=gpc_extension_existing",
+                  "_blank"
+                )
+              }
             >
               Existing Account Login
             </button>
