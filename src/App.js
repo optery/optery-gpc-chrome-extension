@@ -33,7 +33,6 @@ const App = () => {
         const isChromeInternalPage = tab.url.startsWith("chrome://");
 
         if (isChromeInternalPage) {
-          console.warn("Cannot send message to Chrome internal pages.");
           return;
         }
         chrome.tabs.sendMessage(tab.id, { gpcValue: isChecked });
