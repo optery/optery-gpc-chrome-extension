@@ -9,7 +9,7 @@
     "32": "/icons/optery-icon-32.png",
     "48": "/icons/optery-icon-48.png"
   },
-  "permissions": ["storage", "tabs", "declarativeNetRequest", "scripting"],
+  "permissions": ["storage", "tabs", "declarativeNetRequest"],
   "web_accessible_resources": [
     {
       "resources": ["contentScript.js", "injectScript.js"],
