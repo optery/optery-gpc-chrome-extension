@@ -7,8 +7,7 @@
   "icons": {
     "16": "/icons/optery-icon-16.png",
     "32": "/icons/optery-icon-32.png",
-    "48": "/icons/optery-icon-48.png",
-    "128": "/icons/optery-gpc-extension.png"
+    "48": "/icons/optery-icon-48.png"
   },
   "permissions": ["storage", "tabs", "declarativeNetRequest"],
   "web_accessible_resources": [
