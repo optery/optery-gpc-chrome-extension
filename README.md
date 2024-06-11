@@ -42,3 +42,6 @@ npm run build
 ## Install
 
 [link-chrome]: https://chromewebstore.google.com/detail/optery-global-privacy-con/nkiidnpgmddigajgebjhcdiklebfoomm
+
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg" width="48" alt="Chrome" valign="middle">][link-chrome] [<img valign="middle" src="https://img.shields.io/github/v/release/optery/optery-gpc-chrome-extension">][link-chrome] and other Chromium browsers
+
