@@ -1,4 +1,4 @@
-# optery-gpc-chrome-extension
+# Optery Global Privacy Control (GPC) Extension - Deliver Privacy Preferences
 
 # Installation
 
