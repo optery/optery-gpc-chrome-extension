@@ -37,10 +37,12 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "nth-check": "^2.1.1",
-    "postcss": ">=8.4.31"
+    "postcss": ">=8.4.31",
+    "ws": ">=8.17.1"
   },
   "overrides": {
     "nth-check": "$nth-check",
-    "postcss": "$postcss"
+    "postcss": "$postcss",
+    "ws": "$ws"
   }
 }
