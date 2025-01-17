@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Optery Global Privacy Control (GPC) Extension - Deliver Privacy Preferences",
+  "short_name": "Optery Global Privacy Control",
+  "version": "0.0.3",
+  "description": "Optery's Global Privacy Control Extension empowers you to communicate your privacy preferences to websites using the GPC signal.",
+  "icons": {
+    "16": "/icons/optery-icon-16.png",
+    "32": "/icons/optery-icon-32.png",
+    "48": "/icons/optery-icon-48.png",
+    "128": "/icons/optery-gpc-extension.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "optery-gpc@optery.com",
+      "strict_min_version": "57.0"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "web_accessible_resources": ["contentScript.js", "injectScript.js"],
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  }
+}

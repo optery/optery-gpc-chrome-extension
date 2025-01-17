@@ -3,33 +3,16 @@
   "version": "0.0.3",
   "private": false,
   "license": "MIT",
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
+  "workspaces": [
+    "chrome",
+    "firefox"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "npm run build --workspaces",
+    "build:chrome": "npm run build --workspace=chrome",
+    "build:firefox": "npm run build --workspace=firefox",
+    "start": "npm run start --workspaces",
+    "test": "npm run test --workspaces"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
