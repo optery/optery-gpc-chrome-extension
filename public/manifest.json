@@ -29,7 +29,8 @@
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "persistent": true
   },
   "declarative_net_request": {
     "rule_resources": [
