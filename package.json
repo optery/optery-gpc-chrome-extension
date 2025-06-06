@@ -43,6 +43,7 @@
   "overrides": {
     "nth-check": "$nth-check",
     "postcss": "$postcss",
-    "ws": "$ws"
+    "ws": "$ws",
+    "webpack-dev-server": "^5.2.1"
   }
 }
